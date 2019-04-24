@@ -1,0 +1,7 @@
+{
+	"main": "nw_main.js",
+	"name": "Template",
+	"version": "0.0.1",
+	"description": "Template", 
+	"author": "ace"
+}
