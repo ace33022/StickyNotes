@@ -7,9 +7,9 @@
 <html lang="zh-Hant-TW">
 
   <head>
-	
-    <title>Template</title>
-		
+
+    <title>Sticky Notes</title>
+
     <meta http-equiv="Content-Language" content="zh-tw">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,17 +19,69 @@
     <meta name="theme-color" content="#FFFFFF" />
 
 		<meta name="robots" content="index,follow" />
-		
+
 		<meta name="keywords" content="Template" />
     <meta name="description" content="Template" />
-		
+
     <meta name="author" content="ace33022">
     <meta name="force-login" content="N">
 
 		<!-- <base href="/" /> -->
 		<!-- <base href="W:/Tool/Package/LangEnv/Java/apache-tomcat/webapps/ROOT/" /> -->
-		
+
 		<link type="image/png" rel="icon" href="images/favicon.png" />
+
+    <style type="text/css">
+
+      body {
+          font-family: 'Lucida Grande', 'Helvetica', sans-serif;
+      }
+
+      .note {
+          background-color: rgb(255, 240, 70);
+          height: 250px;
+          padding: 10px;
+          position: absolute;
+          width: 200px;
+          -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+      }
+
+      .note:hover .closebutton {
+          display: block;
+      }
+
+      .closebutton {
+          display: none;
+          background-image: url(deleteButton.png);
+          height: 30px;
+          position: absolute;
+          left: -15px;
+          top: -15px;
+          width: 30px;
+      }
+
+      .closebutton:active {
+          background-image: url(deleteButtonPressed.png);
+      }
+
+      .edit {
+          outline: none;
+      }
+
+      .timestamp {
+          position: absolute;
+          left: 0px;
+          right: 0px;
+          bottom: 0px;
+          font-size: 9px;
+          background-color: #db0;
+          color: white;
+          border-top: 1px solid #a80;
+          padding: 2px 4px;
+          text-align: right;
+      }
+
+    </style>
 
 		<!--
     <script type="text/javascript" src="javascripts/tw/ace33022/NameSpace.js"></script>
@@ -39,12 +91,12 @@
 
 		<script type="text/javascript" src="javascripts/tw/ace33022/RequireJSConfig.js"></script>
 		-->
-		
+
     <script type="text/javascript" src="https://ace33022.github.io/tw/ace33022/NameSpace.js"></script>
 
     <script type="text/javascript" src="https://ace33022.github.io/tw/ace33022/DefaultConfigurations.js"></script>
 		<script type="text/javascript" src="https://ace33022.github.io/tw/Configurations.js"></script>
-		
+
     <script type="text/javascript" src="https://ace33022.github.io/tw/ace33022/RequireJSConfig.js"></script>
   </head>
 
@@ -57,6 +109,6 @@
 		-- @author ace
 		--
 		-->
-	
+
   <body></body>
 </html>
